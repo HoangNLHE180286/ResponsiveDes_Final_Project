@@ -8,8 +8,6 @@ body {
     margin: 15px;
     font-size: 25px;
     font-family: Arial, sans-serif;
-
-    overflow-y: auto
 }
 
 h1 {
@@ -74,13 +72,19 @@ img {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    body {
+        overflow: hidden;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     figure {
         background-color: dimgray;
         color: gold;
     }
 
-    figure img{
+    figure img {
         border-color: black;
     }
 }
